@@ -20,5 +20,4 @@ jobs:
       - name: Run Readme Gifme Script
         env:
           GIPHY_API_KEY_DEV: ${{ secrets.TEST_PYPI_API_TOKEN }}
-        run:
-          ./readme-gifme.sh '${GIPHY_API_KEY_DEV}'
+        run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}'
