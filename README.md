@@ -1,5 +1,5 @@
 ![Alt Text](https://media.giphy.com/media/WvukhnSrppbJIOA4CQ/giphy.gif)
-# README.gif // **Keeping README's cool one repo at a time!**
+# READme GIFme // **Keeping README's cool one repo at a time!**
 
 ###### **But why?**
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
