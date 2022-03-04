@@ -19,5 +19,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run Readme Gifme Script
         env:
-          GIPHY_API_KEY_DEV: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          GIPHY_API_KEY_DEV: ${{ secrets.GIPHY_API_KEY_DEV }}
         run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}'
