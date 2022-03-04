@@ -2,19 +2,15 @@
 
 # Settings for GIPHY
 api_key="[GIPHY_API_KEY]"
-tag="space"
+tag="mood"
 rating="g"
 giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$rating" 
 
 # Local 
-responseFile="response.txt"
+responseFile="temp"
 readmeFile="README.md"
-oldGifId=""
 
-# Make sure response file exist, create it if not.
-if [-f "$responseFile" ]; then
-    oldGifId=$(head -n 1 $responseFile)
-fi
+touch $responseFile
 
 # Hit enpoint
 curl $giphyEndpoint | python -c "import sys, json; f = open('$responseFile', 'w'); f.write(json.load(sys.stdin)['data']['id']); f.close()"
@@ -24,10 +20,6 @@ if [ ! -f "$readmeFile" ]; then
     touch $readmeFile
 fi
 
-if [ ! -f "$responseFile" ]; then
-    # Create response file
-    touch $responseFile
-fi
 
 gifId=$(head -n 1 $responseFile)
 gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
@@ -43,9 +35,12 @@ else
     cat $readmeFile
 fi
 
+## Remove 
+rm $responseFile
+
 ## Create a commit with just the read me file
 ## OPTIONAL!
 GIT='git --git-dir='$PWD'/.git'
 GIT add README.md
-GIT commit -m "🤖 a gif that keeps on giving."
+GIT commit -m "docs: GIF a little? 🤖"
 GIT push
