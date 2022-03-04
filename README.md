@@ -14,9 +14,9 @@ But seriously though, who would want to do such a mondane task? Gross.
 
 ###### **Usage**
 - [Request A GIPHY API Key](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
-- Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file
-- Change ```tag``` to a key word of your interest
-- Enjoy!
+- Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file or add this as an environment secret. *(DO NOT COMMIT RAW VALUE TO A PUBLIC REPO)*
+- Change ```tag``` in the ```.sh``` to a key word of your interest
+- Thats it. Enjoy!
 
 ###### **Just a friendly note:**
 All memes are **Rated G** *(means ISFW)*

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 if [ !$GIPHY_API_KEY_DEV ]; then
     echo "GIPHY API Key is required."
@@ -29,7 +29,7 @@ gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
 if [ !$gifId ]; then
-    echo "The GIPHY ID is missing."
+    echo "The GIPHY ID is missing. Confirm that your GIPHY API Key is correct."
     exit 1;
 fi
 
