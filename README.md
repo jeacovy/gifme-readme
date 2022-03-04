@@ -1,3 +1,4 @@
+![Alt Text](https://media.giphy.com/media/EqNEBRrbOUXQTeyXOZ/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/fnMSwjA3f7T4PTpf6o/giphy.gif)
 # READme GIFme // **Keeping README's cool one repo at a time!**
 
