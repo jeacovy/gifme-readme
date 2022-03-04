@@ -7,20 +7,18 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-env:
-  CI: true
-  GIPHY_API_KEY_DEV: "GIF GIF GIF"
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Steps represent a sequence of tasks that will be ecxecuted as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - shell: bash
       # Runs a single command using the runners shell
       - name: Run Readme Gifme Script
-        run: |
-         ./readme-gifme.sh "$GIPHY_API_KEY_DEV"
+        env:
+          GIPHY_API_KEY_DEV: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        run:
+          ./readme-gifme.sh '${GIPHY_API_KEY_DEV}'
