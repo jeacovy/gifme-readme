@@ -29,6 +29,11 @@ gifId=$(head -n 1 $responseFile)
 gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
+if [ !$gifId ]; then
+    echo "The GIPHY ID is missing."
+    exit 1;
+fi
+
 # The readme file should exist in the first line (room for improvement)
 if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
@@ -37,11 +42,6 @@ if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
 else
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
-fi
-
-if [ !$gifId ]; then
-    echo "The GIPHY ID is missing."
-    exit 1;
 fi
 
 # Create a commit with just the read me file
