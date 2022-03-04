@@ -8,7 +8,7 @@ Good question. The goal is to provide engineering teams with an easy way to add 
 Perfect for pipeline builds. Imagine a unqiue GIF generated each time you release. Something to match your awesome, unique, and over thought up release name *(yes, I said it!)*.
 
 ###### **Why can't I just copy and paste?**
-Let't think about that. You would have to find a GIF, copy, and paste. Oh yeah, then lets save it... Where as this does it all for you, without you having to think. What more could you ask for? 
+Let's think about that. You would have to find a GIF, copy, and paste. Oh yeah, then lets save it... Where as this does it all for you, without you having to think. What more could you ask for? 
 
 But seriously though, who would want to do such a mondane task? Gross.
 

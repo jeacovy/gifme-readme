@@ -3,7 +3,7 @@
 # Settings for GIPHY
 api_key=$GIPHY_API_KEY_DEV
 
-if [ ! $api_key ]; then
+if [ !$api_key ]; then
     echo "GIPHY API Key is required."
     exit 1;
 fi
