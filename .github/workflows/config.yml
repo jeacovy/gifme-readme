@@ -27,10 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run the GIF script 
-        run: sh ./.github/workflows/readme-gifme.sh
-
-      # Runs a set of commands using the runners shell
-#       - name: Run a multi-line script
-#         run: |
-#           echo Add other actions to build,
-#           echo test, and deploy your project.
+        run: sh ./readme-gifme.sh
