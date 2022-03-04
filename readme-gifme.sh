@@ -46,6 +46,9 @@ fi
 
 # Create a commit with just the read me file
 # OPTIONAL!
+sudo apt update
+sudo apt install git
+
 GIT='git --git-dir='$PWD'/.git'
 GIT add README.md
 GIT commit -m "👾 is it pronounce Gif or Gif?"
