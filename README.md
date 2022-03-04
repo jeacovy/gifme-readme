@@ -1,4 +1,4 @@
-![Alt Text](https://media.giphy.com/media/2UtegbQgkGyQOjMSko/giphy.gif)
+![Alt Text](https://media.giphy.com/media//giphy.gif)
 # README.gif // **Keeping README's cool one repo at a time!**
 
 ###### **But why?**
@@ -11,6 +11,11 @@ Perfect for pipeline builds. Imagine a unqiue GIF generated each time you releas
 Let't think about that. You would have to find a GIF, copy, and paste. Oh yeah, then lets save it... Where as this does it all for you, without you having to think. What more could you ask for? 
 
 But seriously though, who would want to do such a mondane task? Gross.
+
+###### **Usage**
+- [Request A GIPHY API Key](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
+- Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file
+- Enjoy!
 
 ###### **Just a friendly note:**
 All memes are **Rated G** *(means ISFW)*
