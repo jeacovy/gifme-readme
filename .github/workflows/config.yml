@@ -22,7 +22,7 @@ jobs:
           GIPHY_API_KEY_DEV: '${{ secrets.GIPHY_API_KEY_DEV }}'
         run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}'
       - name: Update changes in GitHub repository
-        if: steps.git-check.outputs.modified == 'true'
+        # if: steps.git-check.outputs.modified == 'true'
         run:  |
           git config --global user.name '${{ secrets.GIT_USER }}'
           git config --global user.email ${{ secrets.GIT_EMAIL }}'
