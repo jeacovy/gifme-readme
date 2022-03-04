@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 # Settings for GIPHY
-api_key="[GIPHY_API_KEY]"
+api_key=${{ secrets.GIPHY_API_KEY_DEV }}
+
+if [ ! $api_key ]; then
+    echo "GIPHY API Key is required."
+    exit 1;
+fi
+
 tag="mood"
 rating="g"
 giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$rating" 
@@ -9,11 +15,6 @@ giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$ra
 # Local 
 responseFile="temp"
 readmeFile="README.md"
-
-if [ $api_key == "[GIPHY_API_KEY]" ]; then
-    echo "GIPHY API Key is required."
-    exit 1;
-fi
 
 touch $responseFile
 
