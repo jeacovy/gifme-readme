@@ -17,6 +17,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - name: chmod
+        run: chmod +x ./readme-gifme.sh
+
       # Runs a single command using the runners shell
       - name: Run Readme Gifme Script
         run: GIPHY_API_KEY_DEV="${{ secrets.GIPHY_API_KEY_DEV }}" ./readme-gifme.sh
