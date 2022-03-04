@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 api_key="$GIPHY_API_KEY_DEV"
 
-# if [ !$api_key ]; then
-#     echo "GIPHY API Key is required."
-#     exit 1;
-# fi
+if [ !$api_key ]; then
+    echo "GIPHY API Key is required."
+    exit 1;
+fi
 
 # Settings for GIPHY
 tag="mood"
@@ -29,10 +29,10 @@ gifId=$(head -n 1 $responseFile)
 gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
-# if [ !$gifId ]; then
-#     echo "The GIPHY ID is missing. Confirm that your GIPHY API Key is correct."
-#     exit 1;
-# fi
+if [ !$gifId ]; then
+    echo "The GIPHY ID is missing. Confirm that your GIPHY API Key is correct."
+    exit 1;
+fi
 
 # The readme file should exist in the first line (room for improvement)
 if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
