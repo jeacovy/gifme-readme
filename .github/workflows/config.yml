@@ -7,7 +7,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-
+env:
+  CI: true
+  GIPHY_API_KEY_DEV: "GIF GIF GIF"
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -17,8 +19,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        env:
-          GIPHY_API_KEY_DEV: "GIF GIF GIF"
+      - shell: bash
       # Runs a single command using the runners shell
       - name: Run Readme Gifme Script
-        run: sh ./readme-gifme.sh "$GIPHY_API_KEY_DEV"
+        run: |
+         ./readme-gifme.sh "$GIPHY_API_KEY_DEV"
