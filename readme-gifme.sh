@@ -10,6 +10,11 @@ giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$ra
 responseFile="temp"
 readmeFile="README.md"
 
+if [ $api_key == "[GIPHY_API_KEY]" ]; then
+    echo "GIPHY API Key is required."
+    exit 1;
+fi
+
 touch $responseFile
 
 # Hit enpoint
@@ -20,13 +25,12 @@ if [ ! -f "$readmeFile" ]; then
     touch $readmeFile
 fi
 
-
 gifId=$(head -n 1 $responseFile)
 gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
 # The readme file should exist in the first line (room for improvement)
-if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
+if [[] $firstLineOfReadme == *"media.giphy.com"* ]]; then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
@@ -35,12 +39,17 @@ else
     cat $readmeFile
 fi
 
+if [ ! $gifId]; then
+    echo "The GIPHY ID is missing."
+    exit 1;
+fi
+
 ## Remove 
 rm $responseFile
 
-## Create a commit with just the read me file
-## OPTIONAL!
+# Create a commit with just the read me file
+# OPTIONAL!
 GIT='git --git-dir='$PWD'/.git'
 GIT add README.md
-GIT commit -m "docs: GIF a little? 🤖"
+GIT commit -m "🥑 The clean up!"
 GIT push
