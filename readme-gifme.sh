@@ -30,7 +30,7 @@ gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
 # The readme file should exist in the first line (room for improvement)
-if [[] $firstLineOfReadme == *"media.giphy.com"* ]]; then
+if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
@@ -39,17 +39,14 @@ else
     cat $readmeFile
 fi
 
-if [ ! $gifId]; then
+if [ !$gifId ]; then
     echo "The GIPHY ID is missing."
     exit 1;
 fi
 
-## Remove 
-rm $responseFile
-
-# Create a commit with just the read me file
-# OPTIONAL!
+Create a commit with just the read me file
+OPTIONAL!
 GIT='git --git-dir='$PWD'/.git'
 GIT add README.md
-GIT commit -m "🥑 The clean up!"
+GIT commit -m "👾 is it pronounce Gif or Gif?"
 GIT push
