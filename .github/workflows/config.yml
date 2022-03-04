@@ -8,7 +8,7 @@ on:
   push:
     branches: [ main ]
 env:
-  GIPHY_API_KEY_DEV: '${{ secrets.GIPHY_API_KEY_DEV }}'
+  GIPHY_API_KEY_DEV: '${{ env.GIPHY_API_KEY_DEV }}'
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
