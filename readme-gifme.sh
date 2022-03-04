@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $GIPHY_API_KEY_DEV
 
 if [ !$GIPHY_API_KEY_DEV ]; then
     echo "GIPHY API Key is required."
