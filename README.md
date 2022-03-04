@@ -1,4 +1,4 @@
-![Alt Text](https://media.giphy.com/media/CSgpt5m8Deau6swSfB/giphy.gif)
+![Alt Text](https://media.giphy.com/media/Lq0itq8LH5rzrLblOf/giphy.gif)
 # README.gif // **Keeping README's cool one repo at a time!**
 
 ###### **But why?**
@@ -15,6 +15,7 @@ But seriously though, who would want to do such a mondane task? Gross.
 ###### **Usage**
 - [Request A GIPHY API Key](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
 - Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file
+- Change ```tag``` to a key word of your interest
 - Enjoy!
 
 ###### **Just a friendly note:**
