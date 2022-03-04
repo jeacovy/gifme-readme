@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Settings for GIPHY
-api_key=${{ secrets.GIPHY_API_KEY_DEV }}
+api_key=$GIPHY_API_KEY_DEV
 
 if [ ! $api_key ]; then
     echo "GIPHY API Key is required."
