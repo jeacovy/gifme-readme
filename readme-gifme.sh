@@ -35,21 +35,24 @@ firstLineOfReadme=$(head -n 1 $readmeFile)
 # fi
 
 # The readme file should exist in the first line (room for improvement)
-if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
+# if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
-else
-    echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
-    cat $readmeFile
-fi
+# else
+#     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
+#     cat $readmeFile
+# fi
 
 # Create a commit with just the read me file
 # OPTIONAL!
-sudo apt update
-sudo apt install git
+# sudo apt update
+# sudo apt install git
+# git config --global user.name "Your Name"
+# git config --global user.email "youremail@domain.com"
 
-GIT='git --git-dir='$PWD'/.git'
-GIT add README.md
-GIT commit -m "👾 is it pronounce Gif or Gif?"
-GIT push
+
+# GIT='git --git-dir='$PWD'/.git'
+# GIT add README.md
+# GIT commit -m "👾 is it pronounce Gif or Gif?"
+# GIT push
