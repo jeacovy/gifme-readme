@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 
-# Settings for GIPHY
-api_key=$GIPHY_API_KEY_DEV
-
-if [ !$api_key ]; then
+if [ !$GIPHY_API_KEY_DEV ]; then
     echo "GIPHY API Key is required."
     exit 1;
 fi
 
+# Settings for GIPHY
 tag="mood"
 rating="g"
-giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$rating" 
+giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$GIPHY_API_KEY_DEV&tag=$tag&rating=$rating" 
 
 # Local 
 responseFile="temp"
