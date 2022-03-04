@@ -44,8 +44,8 @@ if [ !$gifId ]; then
     exit 1;
 fi
 
-Create a commit with just the read me file
-OPTIONAL!
+# Create a commit with just the read me file
+# OPTIONAL!
 GIT='git --git-dir='$PWD'/.git'
 GIT add README.md
 GIT commit -m "👾 is it pronounce Gif or Gif?"
