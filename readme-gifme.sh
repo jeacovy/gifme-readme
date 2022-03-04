@@ -38,11 +38,12 @@ then
 fi
 
 # The readme file should exist in the first line (room for improvement)
-# if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
+if [[ $firstLineOfReadme == *"media.giphy.com"* ]]
+then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
-# else
-#     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
-#     cat $readmeFile
-# fi
+else
+    echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
+    cat $readmeFile
+fi
