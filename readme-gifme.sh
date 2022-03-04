@@ -1,6 +1,23 @@
-#!/bin/bash
-source ./scripts/pretty.sh
-source ./scripts/fetch.sh
+#!/usr/bin/env bash
+
+# Settings for GIPHY
+api_key="[GIPHY_API_KEY]"
+tag="space"
+rating="g"
+giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$rating" 
+
+# Local 
+responseFile="response.txt"
+readmeFile="README.md"
+oldGifId=""
+
+# Make sure response file exist, create it if not.
+if [-f "$responseFile" ]; then
+    oldGifId=$(head -n 1 $responseFile)
+fi
+
+# Hit enpoint
+curl $giphyEndpoint | python -c "import sys, json; f = open('$responseFile', 'w'); f.write(json.load(sys.stdin)['data']['id']); f.close()"
 
 if [ ! -f "$readmeFile" ]; then
     # Create Readme file
@@ -16,9 +33,8 @@ gifId=$(head -n 1 $responseFile)
 gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
-# The readme file should exist in the first line.
+# The readme file should exist in the first line (room for improvement)
 if [[ $firstLineOfReadme == *"media.giphy.com"* ]]; then
-    # TODO: Lets make this cleaner, replace in are where located.
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
@@ -26,3 +42,10 @@ else
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile
     cat $readmeFile
 fi
+
+## Create a commit with just the read me file
+## OPTIONAL!
+GIT='git --git-dir='$PWD'/.git'
+GIT add README.md
+GIT commit -m "🤖 a gif that keeps on giving."
+GIT push
