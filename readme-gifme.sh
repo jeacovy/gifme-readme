@@ -1,10 +1,10 @@
 #!/bin/bash
 api_key="$GIPHY_API_KEY_DEV"
 
-if [ !$api_key ]; then
-    echo "GIPHY API Key is required."
-    exit 1;
-fi
+# if [ !$api_key ]; then
+#     echo "GIPHY API Key is required."
+#     exit 1;
+# fi
 
 # Settings for GIPHY
 tag="mood"
