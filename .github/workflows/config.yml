@@ -17,7 +17,8 @@ jobs:
       - name: Run Readme Gifme Script
         env:
           GIPHY_API_KEY_DEV: '${{ secrets.GIPHY_API_KEY_DEV }}'
-        run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}'
+          GIPHY_TAG: '${{ secrets.GIPHY_TAG }}'
+        run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}' '${GIPHY_TAG}'
       - name: Update changes in GitHub repository
         run:  |
           git config --global user.name '${{ secrets.GIT_USER }}'

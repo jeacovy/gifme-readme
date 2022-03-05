@@ -1,5 +1,7 @@
 ![AREADme GIFme](https://media.giphy.com/media/TcQtSOviEBoFAUs0G9/giphy.gif)
-# READme GIFme // **Keeping README's cool one repo at a time!** [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
+# **READme GIFme** //  [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
+###### **Got a slogan for us?**
+Keeping README's cool one repo at a time!
 
 ###### **But why?**
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
@@ -15,7 +17,7 @@ But seriously though, who would want to do such a mondane task? Gross.
 ###### **Usage**
 - [Request A GIPHY API Key](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
 - Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file or add this as an environment variable. *(REMEMBER, DO NOT COMMIT SECRET VALUES INTO PUBLIC REPO)*
-- Change ```tag``` in the ```.sh``` file or add this as an environment variable. This is just a keyword *(i.e,. mood)*.
+- Change ```tag``` in the ```.sh``` file or add this as an environment variable. This is just a keyword *(i.e,. mood)*. Without a tag, GIPHY pulls from a random pool *(likely popular gifts)*
 - Thats it. Enjoy!
 
 Do note that this only supports adding a GIF to the top of the README file.
