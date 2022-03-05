@@ -38,7 +38,6 @@ then
 fi
 
 if echo " $firstLineOfReadme" | grep -q "giphy"
-# if [[ $firstLineOfReadme == *"giphy"* ]]
 then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile

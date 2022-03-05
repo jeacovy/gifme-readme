@@ -18,7 +18,7 @@ But seriously though, who would want to do such a mondane task? Gross.
 - Change ```tag``` in the ```.sh``` to a key word of your interest
 - Thats it. Enjoy!
 
-Note that this only supports adding the GIF to the top of the README file.
+Do note that this only supports adding a GIF to the top of the README file.
 
 ###### **Just a friendly note:**
 All memes are **Rated G** *(means ISFW)*
