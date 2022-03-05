@@ -1,5 +1,6 @@
 ![Alt Text](https://media.giphy.com/media/YD1lpj9gv5CbS/giphy.gif)
-# READme GIFme // **Keeping README's cool one repo at a time!**
+# READme GIFme // **Keeping README's cool one repo at a time!** [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
+
 
 ###### **But why?**
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
@@ -25,6 +26,7 @@ All memes are **Rated G** *(means ISFW)*
 
 ###### **Connect with Jeacovy Gayle:**
 I am pretty active on all platforms. Lets connect, so you can put a face to the words!
+
 
 [![](https://img.shields.io/badge/GitHub-0077B5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeacovy)
 [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeacovygayle)
