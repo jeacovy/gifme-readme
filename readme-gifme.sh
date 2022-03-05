@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 api_key="$GIPHY_API_KEY_DEV"
+tag="$GIPHY_TAG"
 
 if [ $api_key == "" ]
 then
@@ -7,8 +8,11 @@ then
     exit 1;
 fi
 
-# Settings for GIPHY
-tag="$GIPHY_TAG"
+if [ $tag == "" ]
+then
+    echo "Tag is empty. GIPHY will pull a random GIF."
+fi
+
 rating="g"
 giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$rating" 
 
