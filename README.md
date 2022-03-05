@@ -1,9 +1,9 @@
 ![AREADme GIFme](https://media.giphy.com/media/JxDYHZ5hIbQxG/giphy.gif)
-# **READme GIFme** //  [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
-###### **Got a slogan for us?**
-Keeping README's cool one repo at a time!
+# READme//GIFme: **Keeping README's cool one repo at a time!**
+###### **Does things work?**
+[![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
 
-###### **But why?**
+###### **But why this though?**
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
 
 ###### **What about a use case?**
