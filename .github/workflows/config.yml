@@ -1,9 +1,9 @@
 name: READme//GIFme
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/60 * * * *'
   push:
-    branches: [ main ]
+    branches: [ master ]
   
 jobs:
   build:
