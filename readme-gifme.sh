@@ -37,8 +37,8 @@ then
     exit 1;
 fi
 
-# The readme file should exist in the first line (room for improvement)
-if [[ $firstLineOfReadme =~ .*"media.giphy.com"* ]]
+if echo " $firstLineOfReadme" | grep -q "giphy"
+# if [[ $firstLineOfReadme == *"giphy"* ]]
 then
     grep -v "media.giphy.com" $readmeFile > tmpfile && mv tmpfile $readmeFile
     echo $gitURL | cat - $readmeFile > temp && mv temp $readmeFile

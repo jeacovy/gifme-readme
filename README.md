@@ -1,4 +1,3 @@
-![Alt Text](https://media.giphy.com/media/2yyIRgC42mrvtpSjOX/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/EqNEBRrbOUXQTeyXOZ/giphy.gif)
 ![Alt Text](https://media.giphy.com/media/fnMSwjA3f7T4PTpf6o/giphy.gif)
 # READme GIFme // **Keeping README's cool one repo at a time!**
@@ -19,6 +18,8 @@ But seriously though, who would want to do such a mondane task? Gross.
 - Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file or add this as an environment secret. *(REMEMBER, DO NOT COMMIT SECRET VALUES INTO PUBLIC REPO)*
 - Change ```tag``` in the ```.sh``` to a key word of your interest
 - Thats it. Enjoy!
+
+Note that this only supports adding the GIF to the top of the README file.
 
 ###### **Just a friendly note:**
 All memes are **Rated G** *(means ISFW)*
