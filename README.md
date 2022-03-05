@@ -7,10 +7,10 @@
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
 
 ###### **What about a use case?**
-Perfect for pipeline builds. Imagine a unqiue GIF generated each time you release. Something to match your awesome, unique, and over thought up release name *(yes, I said it!)*.
+Perfect for pipeline builds. Imagine a unqiue GIF generated each time you release. Something to match your awesome, unique, and overly thought up release name *(yes, I said it!)*.
 
 ###### **Why can't I just copy and paste?**
-Let's think about that. You would have to find a GIF, copy, and paste. Oh yeah, then lets save it... Where as this does it all for you, without you having to think. What more could you ask for? 
+Let's think about that. You would have to find a GIF, copy, and paste. Oh yeah, then lets save it... Where as this does it all for you, without having to think. What more could you ask for? 
 
 But seriously though, who would want to do such a mondane task? Gross.
 
@@ -25,7 +25,7 @@ But seriously though, who would want to do such a mondane task? Gross.
 - All memes are **Rated G** *(means ISFW)*.
 
 ###### **Contributions**
-Come on, come all! If you can think this script can be improved in any way shape or form, please submit a PR. GIF puns are highly recommended with PR titles and commits.
+Come one, come all! If you think this script can be improved in any way shape or form, please submit a PR. GIF puns are highly recommended with PR titles and commits.
 
 ###### **Connect with Jeacovy Gayle:**
 I am pretty active on all platforms. Lets connect, so you can put a face to the words!
