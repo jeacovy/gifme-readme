@@ -1,4 +1,4 @@
-![READme//GIFme](https://media.giphy.com/media/H6R2Vku5RV7kEgTvXp/giphy.gif)
+![READme//GIFme](https://media.giphy.com/media/dtC2us2BXKr8gqFt2S/giphy.gif)
 # READme//GIFme: **Keeping README's cool one repo at a time!**
 ###### **Does things work?**
 [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
