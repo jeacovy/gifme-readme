@@ -15,12 +15,14 @@ Let's think about that. You would have to find a GIF, copy, and paste. Oh yeah, 
 But seriously though, who would want to do such a mondane task? Gross.
 
 ###### **Usage**
+Do note that this only supports adding a GIF to the top of the README file.
 - [Request A GIPHY API Key](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
 - Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file or add this as an environment variable. *(REMEMBER, DO NOT COMMIT SECRET VALUES INTO PUBLIC REPO)*
 - Change ```tag``` in the ```.sh``` file or add this as an environment variable. This is just a keyword *(i.e,. mood)*. Without a tag, GIPHY pulls from a random pool *(likely popular gifts)*
 - Thats it. Enjoy!
 
-Do note that this only supports adding a GIF to the top of the README file.
+###### **Contributions**
+Come on, come all! Any way that you can imagince this can be improved, please submit a PR. GIF puns are highly recommended with PR titles and commits.
 
 ###### **Just a friendly note:**
 All memes are **Rated G** *(means ISFW)*
