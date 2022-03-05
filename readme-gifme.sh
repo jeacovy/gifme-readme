@@ -8,7 +8,7 @@ then
 fi
 
 # Settings for GIPHY
-tag="mood"
+tag="$GIPHY_TAG"
 rating="g"
 giphyEndpoint="api.giphy.com/v1/gifs/random?api_key=$api_key&tag=$tag&rating=$rating" 
 
