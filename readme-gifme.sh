@@ -28,7 +28,7 @@ then
 fi
 
 gifId=$(head -n 1 $responseFile)
-gitURL="![Alt Text](https://media.giphy.com/media/$gifId/giphy.gif)"
+gitURL="![AREADme GIFme](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
 if [ $gifId == "" ]

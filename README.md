@@ -1,6 +1,5 @@
-![Alt Text](https://media.giphy.com/media/YD1lpj9gv5CbS/giphy.gif)
+![READme GIFme](https://media.giphy.com/media/yxsrTCHZcUs3RFM5Od/giphy.gif)
 # READme GIFme // **Keeping README's cool one repo at a time!** [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
-
 
 ###### **But why?**
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
