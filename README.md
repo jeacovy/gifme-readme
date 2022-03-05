@@ -14,8 +14,8 @@ But seriously though, who would want to do such a mondane task? Gross.
 
 ###### **Usage**
 - [Request A GIPHY API Key](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
-- Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file or add this as an environment secret. *(REMEMBER, DO NOT COMMIT SECRET VALUES INTO PUBLIC REPO)*
-- Change ```tag``` in the ```.sh``` to a key word of your interest
+- Replace ```[GIPHY_API_KEY]``` in the ```.sh``` file or add this as an environment variable. *(REMEMBER, DO NOT COMMIT SECRET VALUES INTO PUBLIC REPO)*
+- Change ```tag``` in the ```.sh``` file or add this as an environment variable. This is just a keyword *(i.e,. mood)*.
 - Thats it. Enjoy!
 
 Do note that this only supports adding a GIF to the top of the README file.
