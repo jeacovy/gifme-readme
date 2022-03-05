@@ -20,13 +20,12 @@ But seriously though, who would want to do such a mondane task? Gross.
 - Change ```tag``` in the ```.sh``` file or add this as an environment variable. This is just a keyword *(i.e,. mood)*. Without a tag, GIPHY pulls from a random pool *(likely popular gifts)*
 - Thats it. Enjoy!
 
-Support is only for adding a GIF at the top of the README file.
+###### **Notes**
+- Support is only for adding a GIF at the top of the README file.
+- All memes are **Rated G** *(means ISFW)*.
 
 ###### **Contributions**
 Come on, come all! If you can think this script can be improved in any way shape or form, please submit a PR. GIF puns are highly recommended with PR titles and commits.
-
-###### **Just a friendly note:**
-All memes are **Rated G** *(means ISFW)*
 
 ###### **Connect with Jeacovy Gayle:**
 I am pretty active on all platforms. Lets connect, so you can put a face to the words!
