@@ -1,7 +1,8 @@
-![READme//GIFme](https://media.giphy.com/media/je5a7nHbkBbIQ/giphy.gif)
+![READme//GIFme](https://media.giphy.com/media/eOpikoObuGEUw/giphy.gif)
 # READme//GIFme: **Keeping README's cool one repo at a time!**
 ###### **Does things work?**
 [![CI](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml/badge.svg)](https://github.com/jeacovy/readme-gifme/actions/workflows/config.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ###### **But why this though?**
 Good question. The goal is to provide engineering teams with an easy way to add pazzaz to their README files. That's litteraly it!
@@ -21,15 +22,14 @@ But seriously though, who would want to do such a mondane task? Gross.
 - Thats it. Enjoy!
 
 ###### **Notes**
-- Support is only for adding a GIF at the top of the README file.
-- All memes are **Rated G** *(means ISFW)*.
+- Current support is only for adding a GIF at the top of the README files within the root of your codebase.
+- Most importantly, all memes are **Rated G** *(means ISFW)*.
 
 ###### **Contributions**
 Come one, come all! If you think this script can be improved in any way shape or form, please submit a PR. GIF puns are highly recommended with PR titles and commits.
 
 ###### **Connect with Jeacovy Gayle:**
 I am pretty active on all platforms. Lets connect, so you can put a face to the words!
-
 
 [![](https://img.shields.io/badge/GitHub-0077B5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeacovy)
 [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeacovygayle)
