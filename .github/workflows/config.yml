@@ -1,10 +1,10 @@
 name: READme//GIFme
 on:
   schedule:
-    - cron: "0 *24 * * *"
+    - cron: '*/60 * * * *'
   push:
-    branches: [master]
-
+    branches: [ master ]
+  
 jobs:
   build:
     # The type of runner that the job will run on
@@ -15,14 +15,14 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run READme//GIFme Script
         env:
-          GIPHY_API_KEY_DEV: "${{ secrets.GIPHY_API_KEY_DEV }}"
-          GIPHY_TAG: "${{ secrets.GIPHY_TAG }}"
+          GIPHY_API_KEY_DEV: '${{ secrets.GIPHY_API_KEY_DEV }}'
+          GIPHY_TAG: '${{ secrets.GIPHY_TAG }}'
         run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}' '${GIPHY_TAG}'
-      - name: Add pazzaz to their README
-        run: |
+      - name: Add pazzaz to their README 
+        run:  |
           git config --global user.name '${{ secrets.GIT_USER }}'
           git config --global user.email '${{ secrets.GIT_EMAIL }}'
           git fetch
           git add -A
           git commit -m '🍒 You get a GIF. You get a GIF. You get a GIF.'
-          git push
+          git push  
