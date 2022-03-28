@@ -32,9 +32,7 @@ then
 fi
 
 gifId=$(head -n 1 $responseFile)
-gitURL="![READme//GIFme](https://media.giphy.com/media/$gifId/giphy.gif) <br />###### **This repo  was last GIFified on:  "
-gitURL+=`date "+%b %d, %Y at %r"`
-gitURL+="** *(updates hourly)*"
+gitURL="![READme//GIFme](https://media.giphy.com/media/$gifId/giphy.gif)"
 firstLineOfReadme=$(head -n 1 $readmeFile)
 
 if [ $gifId == "" ]
