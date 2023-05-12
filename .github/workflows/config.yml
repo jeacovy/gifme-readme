@@ -1,28 +1,28 @@
-name: READme//GIFme
+name: GIFFYREADME
 on:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: "0 8 * * *"
   push:
-    branches: [ master ]
-  
+    branches: [master]
+
 jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be ecxecuted as part of the job
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
-      - name: Run READme//GIFme Script
+      - name: Run GIFFYREADME Script
         env:
-          GIPHY_API_KEY_DEV: '${{ secrets.GIPHY_API_KEY_DEV }}'
-          GIPHY_TAG: '${{ secrets.GIPHY_TAG }}'
+          GIPHY_API_KEY_DEV: "${{ secrets.GIPHY_API_KEY_DEV }}"
+          GIPHY_TAG: "${{ secrets.GIPHY_TAG }}"
         run: sh ./readme-gifme.sh '${GIPHY_API_KEY_DEV}' '${GIPHY_TAG}'
-      - name: Add pazzaz to their README 
-        run:  |
+      - name: Add pazzaz to their README
+        run: |
           git config --global user.name '${{ secrets.GIT_USER }}'
           git config --global user.email '${{ secrets.GIT_EMAIL }}'
           git fetch
           git add -A
           git commit -m '🍒 You get a GIF. You get a GIF. You get a GIF.'
-          git push  
+          git push
