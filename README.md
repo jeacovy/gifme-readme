@@ -1,18 +1,18 @@
 ![READme//GIFme](https://media.giphy.com/media/HOlVud3MtI5y0/giphy.gif)
 
-GIFFYREADME: Enhancing README Files with Animated GIFs
+GIFme: Enhancing README Files with Animated GIFs
 
 ## Introduction
 
-GIFFYREADME is a tool designed to help engineering teams add visual interest to their README files through the use of animated GIFs. The goal is to make README files more engaging, while providing teams with a simple and easy-to-use solution.
+GIFme is a tool designed to help engineering teams add visual interest to their README files through the use of animated GIFs. The goal is to make README files more engaging, while providing teams with a simple and easy-to-use solution.
 
-## Why GIFFYREADME?
+## Why GIFme?
 
-Animated GIFs are an excellent way to grab the reader's attention and communicate complex ideas in a simple and fun way. By using GIFFYREADME, teams can enhance the overall look and feel of their README files, making them more appealing and user-friendly.
+Animated GIFs are an excellent way to grab the reader's attention and communicate complex ideas in a simple and fun way. By using GIFme, teams can enhance the overall look and feel of their README files, making them more appealing and user-friendly.
 
-## How to Use GIFFYREADME
+## How to Use GIFme
 
-Using GIFFYREADME is straightforward. Simply follow these steps:
+Using GIFme is straightforward. Simply follow these steps:
 
 - Request a GIPHY API key from the [GIPHY website](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key).
 - Replace `[GIPHY_API_KEY]` in the `.sh` file or add this as an environment variable (be sure to keep your API key secret!).
@@ -21,15 +21,15 @@ Using GIFFYREADME is straightforward. Simply follow these steps:
 
 ## Use Cases
 
-GIFFYREADME is perfect for a variety of use cases, such as pipeline builds, release notes, or any situation where you want to add a little extra flair to your README file. With GIFFYREADME, you can easily generate a unique and customized GIF each time you release new code, making your release notes stand out from the rest.
+GIFme is perfect for a variety of use cases, such as pipeline builds, release notes, or any situation where you want to add a little extra flair to your README file. With GIFme, you can easily generate a unique and customized GIF each time you release new code, making your release notes stand out from the rest.
 
 ## Notes
 
-Please note that current support is only for adding a GIF at the top of the README files within the root of your codebase. Additionally, all GIFs provided by GIFFYREADME are rated G (i.e. safe for work).
+Please note that current support is only for adding a GIF at the top of the README files within the root of your codebase. Additionally, all GIFs provided by GIFme are rated G (i.e. safe for work).
 
 ## Contributions
 
-Contributions to GIFFYREADME are welcome! If you think this tool can be improved in any way, please submit a pull request. We also encourage the use of GIF puns in PR titles and commits.
+Contributions to GIFme are welcome! If you think this tool can be improved in any way, please submit a pull request. We also encourage the use of GIF puns in PR titles and commits.
 
 If you have any questions, suggestions, or just want to connect, you can find me on the following platforms:
 
