@@ -14,7 +14,7 @@ Animated GIFs are an excellent way to grab the reader's attention and communicat
 
 Using GIFFYREADME is straightforward. Simply follow these steps:
 
-- Request a GIPHY API key from the[![GIPHY website]([https://img.shields.io/badge/GitHub-0077B5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeacovy](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)).
+- Request a GIPHY API key from the [GIPHY website](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key).
 - Replace `[GIPHY_API_KEY]` in the `.sh` file or add this as an environment variable (be sure to keep your API key secret!).
 - Change the `tag` in the `.s`h file or add this as an environment variable to reflect the keyword of the GIF you want to use.
 - Enjoy your enhanced README file!
