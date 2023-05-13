@@ -1,4 +1,4 @@
-![GIFFYREADME](https://media.giphy.com/media/2UtegbQgkGyQOjMSko/giphy.gif)
+![GIFFYREADME](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif)
 
 # GIFFYREADME Pull Request Template
 
