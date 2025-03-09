@@ -33,7 +33,4 @@ Contributions to GIFme are welcome! If you think this tool can be improved in an
 
 If you have any questions, suggestions, or just want to connect, you can find me on the following platforms:
 
-[![GitHub](https://img.shields.io/badge/GitHub-0077B5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeacovy)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeacovygayle)
-[![Twitter](https://img.shields.io/badge/Twitter-0077B5?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/jeacovy)
-[![Instagram](https://img.shields.io/badge/Instagram-0077B5?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/jeacovy)
+
