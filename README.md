@@ -1,4 +1,4 @@
-![READme//GIFme](https://media.giphy.com/media/5Sfl6d7erEziE/giphy.gif)
+![READme//GIFme](https://media.giphy.com/media/3oEdv9R4D62GPrVY4g/giphy.gif)
 
 GIFme: Enhancing README Files with Animated GIFs
 
