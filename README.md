@@ -6,22 +6,71 @@ GIFme: Enhancing README Files with Animated GIFs
 
 GIFme is a tool designed to help engineering teams add visual interest to their README files through the use of animated GIFs. The goal is to make README files more engaging, while providing teams with a simple and easy-to-use solution.
 
-## Why GIFme?
+## Features
 
-Animated GIFs are an excellent way to grab the reader's attention and communicate complex ideas in a simple and fun way. By using GIFme, teams can enhance the overall look and feel of their README files, making them more appealing and user-friendly.
+✨ **Enhanced for smooth monthly usage:**
+- 🛡️ Robust error handling and dependency checking
+- 🎨 Colorful, informative output with progress indicators
+- 💾 Automatic backups with configurable retention
+- 🔧 Configuration file support for easy setup
+- 🧹 Automatic cleanup of temporary files and old backups
+- 📋 Command-line options for help and configuration status
+- 🔄 Perfect for automated monthly cron jobs
+
+✨ **Original features:**
+- 🎬 Add animated GIFs to your README files
+- 🎯 Search by tags or get random GIFs
+- 🛡️ Safe-for-work content (G-rated by default)
+- 📄 Automatic README creation if it doesn't exist
 
 ## How to Use GIFme
 
-Using GIFme is straightforward. Simply follow these steps:
+GIFme v2.0 offers multiple ways to get started and is designed for smooth monthly usage:
 
-- Request a GIPHY API key from the [GIPHY website](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key).
-- Replace `[GIPHY_API_KEY]` in the `.sh` file or add this as an environment variable (be sure to keep your API key secret!).
-- Change the `tag` in the `.s`h file or add this as an environment variable to reflect the keyword of the GIF you want to use.
-- Enjoy your enhanced README file!
+### Quick Setup (Recommended)
+1. Run the setup wizard: `./setup.sh`
+2. Get your GIPHY API key from the [GIPHY website](https://developers.giphy.com/docs/api#quick-start-guide)
+3. Edit `.gifme.conf` and add your API key
+4. Run: `./readme-gifme.sh`
+
+### Manual Setup
+- Request a GIPHY API key from the [GIPHY website](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key)
+- Set environment variables or create a `.gifme.conf` file:
+  ```bash
+  GIPHY_API_KEY_DEV=your_api_key_here
+  GIPHY_TAG=programming
+  ```
+- Run the script: `./readme-gifme.sh`
+
+### Monthly Automation
+Set up a monthly cron job to automatically update your README:
+```bash
+# Edit your crontab
+crontab -e
+
+# Add this line (runs on the 1st of each month at 9 AM)
+0 9 1 * * cd /path/to/gifme && ./readme-gifme.sh
+```
+
+### Configuration Options
+Create a `.gifme.conf` file with any of these options:
+- `GIPHY_API_KEY_DEV` - Your GIPHY API key (required)
+- `GIPHY_TAG` - Search tag for GIFs (e.g., "programming", "cats")
+- `GIPHY_RATING` - Content rating filter (g, pg, pg-13, r)
+- `README_FILE` - Custom README file path
+- `BACKUP_RETENTION_DAYS` - How long to keep backup files (default: 30)
 
 ## Use Cases
 
-GIFme is perfect for a variety of use cases, such as pipeline builds, release notes, or any situation where you want to add a little extra flair to your README file. With GIFme, you can easily generate a unique and customized GIF each time you release new code, making your release notes stand out from the rest.
+GIFme v2.0 is perfect for various scenarios:
+
+- 📈 **Monthly README updates** - Set up automated monthly refreshes with new GIFs
+- 🚀 **Pipeline builds** - Add dynamic content to release notes
+- 📝 **Project documentation** - Make your documentation more engaging
+- 🎉 **Release celebrations** - Add flair to version releases
+- 👥 **Team morale** - Bring some fun to your project pages
+
+With the enhanced monthly-usage features, you can easily automate GIF updates and maintain a fresh, engaging README without manual intervention.
 
 ## Notes
 

@@ -1,0 +1,22 @@
+# GIFme Configuration File
+# Copy this to .gifme.conf and customize as needed
+
+# GIPHY API Key (required)
+# Get your API key from: https://developers.giphy.com/docs/api#quick-start-guide
+GIPHY_API_KEY_DEV=your_api_key_here
+
+# Tag for GIF search (optional)
+# Leave empty for random GIFs
+GIPHY_TAG=programming
+
+# Additional settings (optional)
+# Uncomment and modify as needed
+
+# GIF rating filter (g, pg, pg-13, r)
+# GIPHY_RATING=g
+
+# Custom README file path (default: ./README.md)
+# README_FILE=/path/to/your/README.md
+
+# Backup retention days (default: 30)
+# BACKUP_RETENTION_DAYS=30
